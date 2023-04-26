@@ -208,7 +208,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/chat-wit/dev/1682526979246-2023-04-26T16:36:19.246Z/chat-wit.zip"
+          "S3Key": "serverless/chat-wit/dev/1682527234627-2023-04-26T16:40:34.627Z/chat-wit.zip"
         },
         "Handler": "s_app.handler",
         "Runtime": "nodejs14.x",
@@ -226,14 +226,14 @@
         "AppLogGroup"
       ]
     },
-    "AppLambdaVersionvGCXAnFLLLvBhFetSqpkYPI0fpP0dfxPJKut7AnHcA0": {
+    "AppLambdaVersionihrODn3ob0d9aqPshRSXkP4evs9WGEcQtkCAKzd3Zg": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "AppLambdaFunction"
         },
-        "CodeSha256": "NVjaG0TRyLHFjBwNMZqczNI6XLI/TOL8iqR1qP0YzHM="
+        "CodeSha256": "uj2WI5iQxYykNGYnunvyfUxV+CYM5yromP1E5Z3GXEo="
       }
     },
     "ApiGatewayRestApi": {
@@ -451,7 +451,7 @@
         "AppLambdaPermissionApiGateway"
       ]
     },
-    "ApiGatewayDeployment1682526972019": {
+    "ApiGatewayDeployment1682527226835": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
@@ -612,7 +612,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/chat-wit/dev/1682526979246-2023-04-26T16:36:19.246Z/custom-resources.zip"
+          "S3Key": "serverless/chat-wit/dev/1682527234627-2023-04-26T16:40:34.627Z/custom-resources.zip"
         },
         "FunctionName": "chat-wit-dev-custom-resource-apigw-cw-role",
         "Handler": "api-gateway-cloud-watch-role/handler.handler",
@@ -674,7 +674,7 @@
     "AppLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "AppLambdaVersionvGCXAnFLLLvBhFetSqpkYPI0fpP0dfxPJKut7AnHcA0"
+        "Ref": "AppLambdaVersionihrODn3ob0d9aqPshRSXkP4evs9WGEcQtkCAKzd3Zg"
       },
       "Export": {
         "Name": "sls-chat-wit-dev-AppLambdaFunctionQualifiedArn"
