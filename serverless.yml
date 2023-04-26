@@ -1,3 +1,5 @@
+org: rrpraxedes
+app: chat-wit
 service: chat-wit
 provider:
   name: aws
