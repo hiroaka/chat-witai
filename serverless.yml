@@ -1,4 +1,4 @@
-service: new-service
+service: chat-wit
 provider:
   name: aws
   runtime: nodejs14.x
